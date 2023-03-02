@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rent-Car</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+  
+    <header>
+        <div id="banner">
+            <nav>
+                <div id="hamburgerImage">
+                    <img  src="/" alt="burger menu">
+                </div>
+                <div id="navBar">
+                    <ul id="burger">
+        
+                        <li><a href="#">Louer une voiture</a></li>
+                        <li><a href="#">Louer un utilitaire</a></li>
+                        <li><a href="#">Réserver un chauffeur</a></li>
+                        <li><a href="#">Découvrez nos agences</a></li>
+                        <li><a href="#">Mon compte</a></li>
+                        <li><a href="#">Contact</a></li>
+        
+                    </ul>
+                </div>
+            </nav>
+            <div id="text">
+                <h2>Bienvenue à bord</h2>
+                <h1>Location de voiture 24h/24 7j/7</h1>   
+            </div>      
+    </div> 
+
+    <form id="barreRecherche">
+         <div class="adress">
+                <div class="triangleIcon">
+                    <select>
+                        <option value="0">Adresse de depart</option>
+                    </select>
+                </div>
+                <div class="triangleIcon">
+                   
+                   <input type=date name="Debut de la location" required>
+                    
+                </div>
+                <div class="triangleIcon">
+                    <input type=date name="Fin de la location" required>
+                    <!-- exemple du input exactement pareil que sur l'image 
+                        mais pas un input date donc je l'ai enlevé -->
+                    <!-- <img src="/img/calendrier.png" alt=""> -->
+                    <!-- <input class="calendier" type="image" src="/img/calendrier.png" width="13vh"> -->
+                </div>
+                
+             </div>
+
+            <div id="submit">
+                <button type=submit >Valider ma recherche</button>
+            </div>
+        </form> 
+
+    </header>
+<main>
+
+<div class="menu">
+    
+        <h3> <span>7</span> résultats </h3>
+    
+   
+    <select>
+        <option value="0">Prix croissant</option>
+        <option value="1">Prix décroissant</option>
+        
+    </select>
+   
+</div>
+
+
+<div class="card">
+
+    <div class="cardLeft">
+        <span class="cardIcon"><img src="/img/iconGauche.png" alt="fleche gauche" ></span>
+        <img src="/img/voitureUn.png" alt="Peugeot 208">
+        <span class="cardIcon"><img src="/img/triangleDroit.png" alt="fleche droite" ></span>
+    </div>
+
+    <div class="cardRight">
+        <h3>Peugeot 208</h3>
+        <h5>Diesel, 5 portes, GPS, Auto radio, forfait 100km (0,5/km supplementaire) </h5>
+        <p>999€ - Agence de Paris</p>
+        <button>Résever et payer</button>
+    </div>
+
+</div>
+<div class="card">
+
+    <div class="cardLeft">
+        <span class="cardIcon"><img src="/img/iconGauche.png" alt="fleche gauche"></span>
+        <img src="/img/voitureDeux.png" alt="">
+        <span class="cardIcon"><img src="/img/triangleDroit.png" alt="fleche droite" ></span>
+    </div>
+    <section class="cardRight">
+        <h3>Ford Focus</h3>
+        <h5>Diesel, 5 portes, GPS, Auto radio, forfait 100km (0,5/km supplementaire) </h5>
+        <p>999€ </p>
+        <button>Résever et payer</button>
+    </section>
+   
+
+</div>
+<div class="card">
+
+    <div class="cardLeft">
+        <span class="cardIcon"><img src="/img/iconGauche.png" alt="fleche gauche" ></span>
+        <img src="/img/voitureTrois.png" alt="">
+        <span class="cardIcon"><img src="/img/triangleDroit.png" alt="fleche droite" ></span>
+    </div>
+   <section class="cardRight">
+    <h3>Audi A1</h3>
+    <h5>Diesel, 5 portes, GPS, Auto radio, forfait 100km (0,5/km supplementaire) </h5>
+        <p>1100€ - Agence de Paris</p>
+        <button>Résever et payer</button>
+    </section>
+
+</div>
+<div class="card">
+
+    <div class="cardLeft">
+        <span class="cardIcon"><img src="/img/iconGauche.png" alt="fleche gauche" ></span>
+        <img src="/img/voitureQuatre.png" alt="">
+        <span class="cardIcon"><img src="/img/triangleDroit.png" alt="fleche droite" ></span>
+    </div>
+   <section class="cardRight">
+    <h3>Opel Moka</h3>
+    <h5>Diesel, 5 portes, GPS, Auto radio, forfait 100km (0,5/km supplementaire) </h5>
+        <p>1150€ - Agence de Paris</p>
+        <button>Résever et payer</button>
+    </section>
+
+</div>
+
+
+
+
+</main>
+
+<footer>
+     <div class="ensembleFoogter">
+        <img src="/img/rue.jpeg" alt="image Agence">
+        <div class="textFooter">
+        <p>Notre agence de <strong>paris</strong> </p>
+        <p>300 boulevard de Vaugirad, 75015, Paris</p>
+        <p>Ouvert 7j/7 de 9h à 13h et de 14h à 20h</p>
+        <p>01 49 18 21 33</p>
+        <p>contact@mohsalah.com</p> 
+        </div>
+     </div>   
+
+</footer>
+
+</body>
+
+
+</html>

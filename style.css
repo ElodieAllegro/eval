@@ -1,0 +1,864 @@
+body{ 
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Arimo', sans-serif;
+   
+}
+header{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: auto;
+   
+
+}
+
+
+/* ici commence le titre de la banniere */
+
+#text{
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    left: 40%;
+    top: 1.5%;
+   
+}
+
+#banner h1{
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-left: 5%;
+    margin: 4%;
+}
+
+#banner h2{
+    margin-bottom: 0%;
+    font-style: normal;
+    font-weight: 585;
+    font-size: 45px;
+    line-height: 57px;
+    color: #FFFFFF;
+    
+}
+/* ici commence le menu hamburger */
+
+#hamburgerImage{
+    
+    position: relative;
+    right: 0px;
+    top: 0%;
+}
+nav{
+    position: relative;
+    right: 0px;
+    top: 0%;
+    margin-top: 0%;
+    width: 100%;
+    height: 20vh;
+    border: #e3d8d800 2px solid;
+}
+#burger a{
+    color: white;
+    text-decoration: none;
+}
+
+#hamburgerImage, li,a{
+    margin-top: 20px;
+}
+#hamburgerImage img{
+    position: relative;
+    left: 96%;
+    width: 4vh;
+    margin-top: 0%;
+
+}
+
+#navBar{
+    visibility: hidden;
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#navBar li{
+    list-style: none;
+    color: black;
+    height: 2vh;
+    width: 15vw;
+    margin-left: 2px;
+}
+
+#navBar #burger a{
+    margin-left: 1%;
+    margin-top: 8%;
+    font-size: large;
+    color: black;
+    text-align: center;
+
+}
+#hamburgerImage:hover + #navBar{
+    visibility: visible;
+  }
+
+/* ici commence le barre de recherche du header */
+
+#barreRecherche{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: flex-end;
+    width:100%;
+    height: 19vh;
+    padding-top: 23%;
+   
+}
+
+.adress{
+    width: 50%;
+    height:5.3vh;
+    margin-left: 24%;
+    background: rgba(182, 181, 180, 0.82);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+}
+
+#submit button{
+    background: rgba(96, 148, 86, 0.71);
+    color: white;
+    font-size: 15px;
+    border: 0px;
+    width: 280px;
+    height:5.3vh;  
+    box-sizing: border-box;
+}
+.triangleIcon{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   height: auto ;
+}
+.triangleIcon select{
+    width: 220px;
+    height: 3vh;
+    background: white; 
+    color: dimgrey;
+    border: 0px;
+    padding:4px ;
+    border-radius: 3px;
+}
+.triangleIcon input{
+    width: 220px;
+    height: 2vh;
+    background: white; 
+    color: dimgrey;
+    border: 0px;
+    padding:4px ;
+    border-radius: 3px;
+}
+/*     ici commence le main      */
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 126vh;
+}
+
+/*     ici commence le menu du main   */
+
+.menu{
+    display: flex;
+    flex-direction: row; 
+    width: 85%;
+    height: 8vh;
+    margin: 0% 0% 0% 10%;
+}
+.menu h3{
+    margin-left: 10%;
+    font-size: 18px;
+}
+.menu span{
+    font-size: 23px;
+}
+
+.menu select{
+    margin: 1% 0% 0% 68%  ;
+    width: 200px;
+    height: 4vh;
+    background:gainsboro; 
+    color: rgb(141, 127, 127);
+    border: 1px solid;
+    padding:4px ;
+    border-radius: 3px;
+} 
+
+ /*     ici commence la card du main     */
+
+.card {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    width: 80%;
+    height: auto;
+   padding-bottom: 4%;
+    border-bottom: #e3d8d8 2px solid;
+}
+.card .cardLeft  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35%;
+    height: auto;
+   
+   
+}
+.cardLeft span img{
+    width: 10px;
+    height: 10px;
+}
+.card span{
+    margin: 25% 1% 1% 1%;
+    
+}
+.card img{
+    
+    margin: 0%;
+    
+}
+.cardRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:3%;
+    width: 55%;
+    height: auto;
+   
+}
+.card button{
+    width: 25%;
+    height: 4vh;
+    background:#669858;
+    color: #EEEEEE;
+    font-size: 95%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #55794a;
+    border-radius: 4px;
+}
+.cardRight h3{
+    margin: 1%;
+    font-size: 30px;
+    color: rgb(95, 92, 92);
+
+}
+.cardRight h5{
+    font-size:16px;
+    margin: 1%;
+    color: dimgray;
+}
+.cardRight p{
+    font-size: 18px;
+    margin: 1%;
+    color: dimgray;
+}
+
+/*    ici commence le footer      */
+footer{
+    width: 100%;
+    /* height: auto; */
+
+}
+.ensembleFoogter{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: auto;
+    padding: 1%;
+    margin-left: 38%;
+
+}
+footer img{
+    width: 38%;
+    height: 38%;
+}
+footer .textFooter{
+    display: flex;
+    flex-direction: column;
+}
+footer P{
+    margin: 2px 4px;
+    font-size: 11px;
+}
+
+/* mobile----------------------------------------------- */
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    body{ 
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        font-family: 'Arimo', sans-serif;
+       }
+
+    header{
+        margin: 0px;
+        padding: 0px;
+        background-image: url(/img/banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100% ;
+        height: 70vh;
+         
+    }
+    #hamburgerImage{
+    
+        position: relative;
+        margin: 3%;
+        right: 0px;
+        top: 0%;
+    }
+    #text{
+        position: absolute;
+        margin: 0%;
+        padding: 0%;
+        height: 20vh;
+        left: 35%;
+        top: 1.5%;
+       
+    }
+    
+    #banner h1{
+        margin-left: 15%;
+        font-size: 10px;
+        font-weight: 400;
+        color: #FFFFFF;
+       
+    }
+    
+    #banner h2{
+        margin-bottom: 0%;
+        font-style: normal;
+        font-weight: 585;
+        font-size: 25px;
+        line-height: 57px;
+        color: #FFFFFF;
+        
+    }
+    #burger{
+        width: 250px;
+        height: auto;
+        margin: 0%;
+       
+    }
+    #burger li{
+        width: 60%; 
+        height: auto;
+        margin: 2%;
+      
+    }
+    #burger li a{
+        width: 50%; 
+        margin: 2%;
+    }
+    #navBar #burger a{
+        margin: 1%;
+        font-size: 8px;
+        color: black;
+        
+    
+    }
+    #hamburgerImage, li,a{
+        margin-top: 5px;
+        
+    }
+    nav{
+        position: relative;
+        right: 0px;
+        top: 0%;
+        margin-top: 0%;
+        width: 100%;
+        height: 20vh;
+       
+    }
+    #barreRecherche{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 40vh;
+        margin:5% ;
+        padding-top:10%;
+       
+    }
+    .adress{
+        width: 100%;
+        height:24vh;
+        background: rgba(182, 181, 180, 0.82);
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    
+    #submit button{
+        background: rgba(96, 148, 86, 0.71);
+        color: rgb(255, 255, 255);
+        border: 0px;
+        width: 390px;
+        height:40px; 
+        
+    }
+    .triangleIcon select{
+        width: 97%;
+        height: 4vh;
+        margin-left: 2%;
+        background: white; 
+        color: dimgrey;
+        border: 0px;
+        padding:4px ;
+        border-radius: 3px;
+    }
+    .triangleIcon input{
+        width: 95%;
+        height: 3vh;
+        margin-left: 2%;
+        background: white; 
+        color: dimgrey;
+        border: 0px;
+        padding:4px ;
+        border-radius: 3px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        height: 7vh;
+        margin: 0% 0% 0% 0%;
+       
+    }
+    .menu h3{
+       
+        margin-left: 1%;
+        width: 20%;
+        font-size: 13px;
+    }
+    .menu span{
+        font-size: 13px;
+    }
+    
+    .menu select{
+        margin: 3% 0% 0% 42%  ;
+        width: 150px;
+        height: 4vh;
+        background:gainsboro; 
+        color: rgb(141, 127, 127);
+        border: 1px solid;
+        padding:4px ;
+        border-radius: 3px;
+    } 
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+      
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        width: 93%;
+        height: auto;
+       
+    }
+    .card .cardLeft  {
+        display: flex;
+        flex-direction: row;
+        margin: 0%;
+        width: 55%;
+        height: auto;
+       
+    }
+    .cardLeft span img{
+        width: 10px;
+        height: 10px;
+    }
+    .card span{
+        margin: 25% 0% 0% 0%;
+        
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+       
+    }
+    .cardRight{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left:2%;
+        width: 50%;
+        height: auto;
+       
+    }
+    .card button{
+        width: 60%;
+        height: 5vh;
+        margin: 50px 0px 0px 60px;
+        background:#669858;
+        color: #EEEEEE;
+        font-size: 70%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 1px solid #55794a;
+        border-radius: 4px;
+    }
+    .cardRight h3{
+        display: none;
+        margin: 1%;
+        font-size: 30px;
+        color: rgb(95, 92, 92);
+    
+    }
+    .cardRight h5{
+        display: none;
+        font-size:16px;
+        margin: 1%;
+        color: dimgray;
+    }
+    .cardRight p{
+        display: none;
+        font-size: 18px;
+        margin: 1%;
+        color: dimgray;
+    }
+    footer{
+        width: 100%;
+       height: 8vh;
+    
+    }
+    .ensembleFoogter{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        height: auto;
+        padding: 1%;
+        margin-left: 38%;
+    
+    }
+    footer img{
+        width: 50%;
+        height:40%;
+    }
+    footer .textFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    footer P{
+        margin: 2px 4px;
+        width:100%;
+        height: auto;
+        font-size: 6px;
+    }   
+}
+
+        
+/*  mode tablette---------------------------------- */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body{ 
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        font-family: 'Arimo', sans-serif;
+       }
+
+    header{
+        margin: 0px;
+        padding: 0px;
+        background-image: url(/img/banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100% ;
+        height:70vh;
+         
+    }
+
+    #hamburgerImage{
+        position: relative;
+        margin: 3%;
+        right: 0px;
+        top: 0%;
+    }
+    #text{
+        position: absolute;
+        margin: 0%;
+        padding: 0%;
+        width: 40%;
+        height: 20vh;
+        left: 30%;
+        top: 2%;
+       
+    }
+    .banner{
+        width: 100%;
+    }
+    #banner h1{
+        margin-left:7%;
+        font-size: 16px;
+        font-weight: 400;
+        color: #FFFFFF;
+       
+    }
+    
+    #banner h2{
+        margin-bottom: 0%;
+        font-style: normal;
+        font-weight: 585;
+        font-size: 32px;
+        line-height: 57px;
+        color: #FFFFFF;
+        
+    }
+
+
+    #burger{
+        width: 250px;
+        height: auto;
+        margin: 0%;
+      
+    }
+    #burger li{
+        width: 60%; 
+        height: auto;
+        margin: 4%;
+      
+    }
+    #burger li a{
+        width: 50%; 
+        margin: 5%;
+    }
+    #navBar #burger a{
+   
+        margin: 1%;
+        font-size: 12px;
+        color: black;
+       
+    
+    }
+    #hamburgerImage, li,a{
+        margin-top: 15px;
+        
+    }
+
+    nav{
+        position: relative;
+        right: 0px;
+        top: 0%;
+        margin-top: 0%;
+        width: 100%;
+        height: 30vh;
+      
+    }
+
+
+    #barreRecherche{
+        display: flex;
+        flex-direction: column;
+        width:90%;
+        height:38vh;
+        margin-left:5% ;
+        padding-top: 20%;
+      
+    }
+    .adress{
+        width: 100%;
+        height:8vh;
+        background: rgba(182, 181, 180, 0.82);
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    #submit button{
+        background: rgba(96, 148, 86, 0.71);
+        color: white;
+        font-size: 15px;
+        border: 0px;
+        width: 640px;;
+        height:6vh;  
+       
+    }
+  
+    .triangleIcon select{
+        width:180px;
+        height: 4vh ;
+        margin-left: 1%;
+        background: white; 
+        color: dimgrey;
+        border: 0px;
+        padding:1px ;
+        border-radius: 3px;
+    }
+    .triangleIcon input{
+        width: 180px;
+        height: 3vh;
+        margin-left: 2%;
+        background: white; 
+        color: dimgrey;
+        border: 0px;
+        padding:4px ;
+        border-radius: 3px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        height: 7vh;
+      
+      
+    }
+    .menu h3{
+        margin-left: 1%;
+        width: 20%;
+        font-size: 14px;
+    }
+    .menu span{
+        font-size: 13px;
+    }
+    
+    .menu select{
+        margin: 3% 0% 0% 42%  ;
+        width: 150px;
+        height: 4vh;
+        background:gainsboro; 
+        color: rgb(141, 127, 127);
+        border: 1px solid;
+        padding:4px ;
+        border-radius: 3px;
+    } 
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        height: 150vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        width: 93%;
+        height: auto;
+      
+    }
+    .card .cardLeft  {
+        display: flex;
+        flex-direction: row;
+        margin: 0%;
+        width: 55%;
+        height: auto;
+       
+    }
+    .cardLeft span img{
+        width: 10px;
+        height: 10px;
+    }
+    .card span{
+        margin: 25% 0% 0% 0%;
+        
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+       
+    }
+    .cardRight{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left:2%;
+        width: 50%;
+        height: auto;
+       
+    }
+    .card button{
+        width: 60%;
+        height: 5vh;
+        margin: 50px 0px 0px 60px;
+        background:#669858;
+        color: #EEEEEE;
+        font-size: 70%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 1px solid #55794a;
+        border-radius: 4px;
+    }
+    .cardRight h3{
+        display: none;
+        margin: 1%;
+        font-size: 30px;
+        color: rgb(95, 92, 92);
+    
+    }
+    .cardRight h5{
+        display: none;
+        font-size:16px;
+        margin: 1%;
+        color: dimgray;
+    }
+    .cardRight p{
+        display: none;
+        font-size: 18px;
+        margin: 1%;
+        color: dimgray;
+    }
+    footer{
+        width: 100%;
+       height: 15vh;
+    
+    }
+    .ensembleFoogter{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        height: auto;
+        padding: 1%;
+        margin-left: 38%;
+    
+    }
+    footer img{
+        width: 50%;
+        height: 50%;
+    }
+    footer .textFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    footer P{
+        margin: 2px 4px;
+        width:100%;
+        height: auto;
+        font-size: 8px;
+    }
+    
+}
+
